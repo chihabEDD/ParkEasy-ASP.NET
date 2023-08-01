@@ -1,0 +1,126 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    
+    <style type="text/css">
+        .tabular 
+        {
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+        }
+
+        .intabular 
+        {
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            background-color: White;
+        }
+
+        .button 
+        {
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            background-color: White;
+            width:130px;
+            height:45px;
+            color:grey;
+        }
+
+        .header 
+        {
+            font-size:x-large;
+            font-family:'Bell MT';
+            text-decoration:underline;
+            text-decoration-color:gray;
+            color:gray;
+        }
+
+        .auto-style1 {
+            font-family: gadugi;
+            font-size: small;
+        }
+
+    </style>
+
+</head>
+<body background="Images/BG.png">
+
+    <form id="form1" runat="server">
+    <center>
+    <div style="border: thin solid #C0C0C0; width:60%">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+    <table>
+    
+    <tr>
+    <td colspan="2">
+        <img width="100%" src="Images/Online%20Parking%20Booking%20Banner.jpg"/>
+    </td>
+    </tr>
+    
+    <tr>
+    <td colspan="2">
+    <asp:Panel ID="Panel1" runat="server">
+        <ul id="css3menu1" class="topmenu">
+	        <li class="topfirst"><a href="AddStud.aspx" style="height:13px;line-height:13px;">Add Student</a></li>
+	        <li class="topmenu"><a href="ViewBooking.aspx" style="height:13px;line-height:13px;">View Bookings</a></li>
+	        <li class="topmenu"><a href="ViewStud.aspx" style="height:13px;line-height:13px;">View Students</a></li>
+            <li class="topmenu"><a href="FeedView.aspx" style="height:13px;line-height:13px;">View Feedback</a></li>
+	        <li class="toplast"><a href="Logout.aspx" style="height:13px;line-height:13px;">Logout</a></li>
+        </ul>
+    </asp:Panel>
+    </td>
+    </tr>
+     <tr>
+    <td colspan="2">
+    <asp:Panel ID="Panel2" runat="server">
+        <ul id="css3menu1" class="topmenu">
+	        <li class="topfirst"><a href="Lay.aspx" style="height:13px;line-height:13px;">View Parking</a></li>
+	        <li class="topmenu"><a href="Book.aspx" style="height:13px;line-height:13px;">Book Parking</a></li>
+	        <li class="topmenu"><a href="ViewBooking.aspx" style="height:13px;line-height:13px;">View Booking</a></li>
+            <li class="topmenu"><a href="Feedback.aspx" style="height:13px;line-height:13px;">Feedback</a></li>
+	        <li class="toplast"><a href="Logout.aspx" style="height:13px;line-height:13px;">Logout</a></li>
+        </ul>
+    </asp:Panel>
+    </td>
+    </tr>
+    <tr>
+    <td colspan="2" class="intabular"> 
+        <center>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </center>
+    </td>
+    </tr>
+    
+    <tr>
+    <td>
+       
+        </td>
+        </tr>
+        
+        <tr>
+        <td colspan="2"></td>
+        </tr>
+    <tr>
+    <td colspan="2" style="background-color: #262523; color: #FFFFFF; font-family: Gadugi;" align="right">
+        <asp:Label ID="Label1" runat="server" CssClass="auto-style1" Text="Online Parking Booking System "></asp:Label>
+        <asp:Label ID="Label2" runat="server" CssClass="auto-style1" Text="|| Your Name&nbsp;&nbsp;&nbsp;"></asp:Label>
+        &nbsp;&nbsp; 
+    </td>
+    </tr>
+    </table>
+    </div>
+            </center>
+    </form>
+</body>
+</html>

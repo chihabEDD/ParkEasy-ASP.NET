@@ -1,0 +1,40 @@
+# ASP.NET Core and Visual Studio files
+*.obj
+*.dll
+*.exe
+*.pdb
+*.user
+*.vscode
+*.vs
+*.suo
+*.cache
+*.log
+*.npm-debug.log
+*.npmrc
+*.sln.docstates
+*.csproj.user
+*.editorconfig
+
+# Build output
+bin/
+obj/
+
+# SQL Server
+*.mdf
+*.ldf
+
+# NuGet
+*.nuget.props
+*.nuget.targets
+
+# User-specific files
+*.userprefs
+*.suo
+*.sln.ide
+
+# Visual Studio Code specific files
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
